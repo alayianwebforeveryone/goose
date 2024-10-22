@@ -1,4 +1,5 @@
 // TopBanner.jsx
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -30,7 +31,8 @@ const TopBanner = () => {
           <div className="w-[1.5px] bg-[#eee4] h-8" />
           <div className="flex gap-x-3 text-[#fff]">
             <Link href="https://www.facebook.com/gooseittc" target="_blank">
-              <svg
+             {/* facebook icon */}
+            <svg
                 stroke="currentColor"
                 fill="currentColor"
                 strokeWidth={0}
