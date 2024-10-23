@@ -123,11 +123,11 @@
     background-color: #1a73e9;
     color: #fff;
     font-size: 16px;
-    padding: 17px 35px;
+    padding: 22px 40px;
     text-transform: uppercase;
     font-weight: 600;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 34px;
     line-height: 26px;
     position: relative;
   }
@@ -218,13 +218,16 @@
     background-repeat: no-repeat;
   }
   .about-hero-bg {
-    background-image: url(/assets/about-hero-bg-D0EJ3uVf.jpg);
+    background-image: url(../../../Assets/images/AboutBanner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: bisque;
     width: 100%}
+
+    
   .blog-bg {
-    background-image: url(/assets/blog-hero-bg-C68BXvGs.jpeg);
+    background-image: url(/assets/images/bgCoverPhoto.jpg);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: initial;
