@@ -141,7 +141,7 @@ const Menu = () => {
                           className="text-black font-bold text-base xl:py-[43px] py-[30px] px-[10px] xl:px-[20px] 
                       leading-[24px] block uppercase hover:text-[#0a58ca] transition-all 
                       duration-200 ease-in cursor-pointer text-nowrap"
-                          href="/Blog"
+                          href="/Blogs"
                         >
                           Blogs
                         </Link>

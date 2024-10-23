@@ -10,7 +10,6 @@ const PopularServiceCard = ({ title, subTitle, description, img, btn }) => {
           <Image src={img} alt="img-blur-shadow" layout="fill" />
         </div>
         <div className="p-6 flex-1">
-          {" "}
           {/* Flex-1 ensures it grows if necessary */}
           <h5 className="mb-2 block font-sans text-xl font-extrabold leading-snug tracking-normal text-blue-gray-900 antialiased">
             {title}
