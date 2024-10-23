@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Card from "./Card";
 
@@ -12,7 +13,7 @@ const About = () => {
             <h1 className="md:text-[52px] md:leading-[3.5rem] sm:text-[28px] text-xl text-start leading-[1.4] lg:font-bold font-semibold text-text-black mb-[40px]">
               Your One-Stop Solution For Consulting And Training Needs
             </h1>
-            <a href="https://gooseittc.com/contact">
+            <Link href="/Contact">
               <button
                 className="btn-sub btn-one z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
                                           overflow-hidden relative text-[#FFFFFF] uppercase py-3 md:py-5 rounded-full"
@@ -33,7 +34,7 @@ const About = () => {
                   <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z" />
                 </svg>
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -46,12 +47,13 @@ const About = () => {
 
 
 
-            <span className="relative uppercase font-bold pl-[55px] text-lg inline-block mb-[10px] text-blue-500 text-center 
-                    before:content-[''] before:absolute before:w-[44px] before:h-[1px] before:bg-blue-500 before:top-[4px] before:left-0 
-                    after:content-[''] after:absolute after:w-[44px] after:h-[3px] after:bg-blue-500 after:bottom-[10px] after:left-0 
-                    hover:text-green transition-colors duration-300">
-       ABOUT
-   </span>
+            <span
+                className="relative uppercase font-bold pl-[55px] inline-block mb-[14px] text-blue text-center
+                  before:absolute before:w-[40px] before:h-[2px] before:bg-blue before:top-[6px] before:left-0
+                  after:absolute after:w-[40px] after:h-[2px] after:bg-blue after:bottom-[6px] after:left-0 text-base"
+              >
+                ABOUT
+              </span>
 
               <h2 className="md:text-[50px] font-bold text-3xl text-text-black">
                 Our Company
@@ -81,7 +83,6 @@ const About = () => {
       </div>
 
 
-      <Card />
     </div>
   );
 };
