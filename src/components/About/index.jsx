@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Card from "./Card";
+
 
 const About = () => {
   return (
@@ -10,8 +10,8 @@ const About = () => {
       <div className="relative">
         <div className="about-hero-bg md:px-[120px] py-[100px] px-4">
           <div className="md:w-[70%] ">
-            <h1 className="md:text-[52px] md:leading-[3.5rem] sm:text-[28px] text-xl text-start leading-[1.4] lg:font-bold font-semibold text-text-black mb-[40px]">
-              Your One-Stop Solution For Consulting And Training Needs
+            <h1 className="md:text-[48px] md:leading-[4.5rem] sm:text-[28px] text-xl text-start leading-[1.4] lg:font-bold font-medium text-white mb-[40px]">
+              Your One-Stop Solution For  Consulting And Training Needs
             </h1>
             <Link href="/Contact">
               <button
