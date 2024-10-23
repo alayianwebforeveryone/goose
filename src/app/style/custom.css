@@ -123,11 +123,11 @@
     background-color: #1a73e9;
     color: #fff;
     font-size: 16px;
-    padding: 17px 35px;
+    padding: 22px 40px;
     text-transform: uppercase;
     font-weight: 600;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 34px;
     line-height: 26px;
     position: relative;
   }
@@ -218,11 +218,14 @@
     background-repeat: no-repeat;
   }
   .about-hero-bg {
-    background-image: url(/assets/about-hero-bg-D0EJ3uVf.jpg);
+    background-image: url(../../../Assets/images/AboutBanner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: bisque;
     width: 100%}
+
+    
   .blog-bg {
     background-image: url(../../../Assets/images/Article5.jpg);
     /* background-position: top right; */
@@ -247,10 +250,10 @@
     z-index: -2;
   }
   .contact-hero-bg {
-    background-image: url(/assets/contact-hero-bg-Bxd_6SiW.jpg);
+    background-image: url(../../../Assets/images/contactCoverImage.PNG);
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: initial;
+    /* background-size: initial; */
     width: 100%;
     height: 100%;
     position: relative;
