@@ -1,10 +1,10 @@
 import About from "@/components/About"
-import Service from "@/components/Services"
+import Service from "@/components/Service"
 
 const ServicePage = () => {
     
   return(
-    <Service />
+    <Service/>
   )
 }
 
