@@ -91,15 +91,15 @@ const Careers = () => {
         </div>
       </div>
 
-      <div class="my-[50px] bg-bg-color relative">
-        <div class="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4">
-          <div class="p-[10px]">
-            <div class="mb-1">
-              <h2 class="p-[10px] text-center w-full md:text-[36px] text-[20px] font-bold">Leading Training Services
+      <div className="my-[50px] bg-bg-color relative">
+        <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4">
+          <div className="p-[10px]">
+            <div className="mb-1">
+              <h2 className="p-[10px] text-center w-full md:text-[36px] text-[20px] font-bold">Leading Training Services
                 Company</h2>
             </div>
-            <div class="text-[#000000] text-[30px] text-center">
-              <h6 class="text-base font-medium leading-[30px] text-text-black">To Stay Relevant And Competitive In
+            <div className="text-[#000000] text-[30px] text-center">
+              <h6 className="text-base font-medium leading-[30px] text-text-black">To Stay Relevant And Competitive In
                 Today’s Fast-Paced Business World, Your Employees Must Perform At Their Best. Gooseittc Delivers
                 Engaging And Innovative Corporate Training Programs That Strategically Align With Your Business
                 Goals</h6>
@@ -108,7 +108,7 @@ const Careers = () => {
         </div>
       </div>
       <div className="bg-bg-color relative">
-        {/* <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4"> */}
+        <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4">
         <div className="grid place-content-center xl:gap-y-12 md:gap-y-8 gap-y-5 gap-x-6 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 pb-5">
           {
             trainingContent.map(({ img, title, details }, index) => {
@@ -121,7 +121,7 @@ const Careers = () => {
           }
 
         </div>
-        {/* </div> */}
+        </div>
       </div>
 
 

@@ -9,7 +9,7 @@ const TrainingCard = ({title,img,details}) => {
         <div>
            
                     
-                    <div  className="w-full bg-[#ffffff] rounded-lg border border-solid border-[#ECECEC] transition-[border_0.6s,border-radius_0.6s,box-shadow_0.6s] mx-[5px] relative p-[10px]
+                    <div  className="w-full h-[570px] bg-[#ffffff] rounded-lg border border-solid border-[#ECECEC] transition-[border_0.6s,border-radius_0.6s,box-shadow_0.6s] mx-[5px] relative p-[10px]
                         hover:shadow-[0px_0px_10px_0px_rgba(0,0,0,0.5)] hover:border-b-[10px] hover:border-t-0 hover:border-l-0 hover:border-r-0 hover:border-[#1A73E9]">
 
                         <div className="mb-5 w-full h-[240px]"><Image src={img} alt="img" className="w-full h-full object-fill" loading="lazy" /></div>
