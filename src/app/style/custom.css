@@ -224,7 +224,7 @@
     z-index: -2;
   }
   .technology-cons-hero-bg {
-    background-image: url(/assets/tech-consulting-Dd3355fp.jpg);
+    background-image: url(../../../Assets//images/consulting.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,7 +245,7 @@
     z-index: -2;
   }
   .technology-training-hero-bg {
-    background-image: url(/assets/tech-training-h5R3ynh8.jpg);
+    background-image: url(../../../Assets/images/techTrainingCover.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -292,4 +292,14 @@
   
   
   
-  
+/* scrollbar hide  */
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none;
+}
+.hideScrollbar::-moz-scrollbar {
+  height: 0 !important;
+  width: 0px !important;
+  background: transparent !important;
+}

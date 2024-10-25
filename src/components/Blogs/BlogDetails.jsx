@@ -1,49 +1,78 @@
-import React from "react";
+
+import React, { useState, useEffect } from "react";
 import stop from "../../../Assets/Icons/close.svg";
 import Image from "next/image";
 import article1 from "../../../Assets/images/Article1.jpg";
 
 const BlogDetails = ({ isVisible, close }) => {
+  // State for theme, default is light
+  const [theme, setTheme] = useState("light");
+
+  // Toggle theme between light and dark
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  // Apply theme to the document when theme state changes
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+
+    // Prevent background scroll when modal is open
+    if (typeof window !== "undefined") {
+      document.body.style.overflow = isVisible ? "hidden" : "auto";
+    }
+  }, [theme, isVisible]);
+
   const handleClose = (e) => {
     if (e.target.id === "container") close();
   };
 
   if (!isVisible) return null;
 
-  // Prevent background scroll when modal is open
-  if (typeof window !== "undefined") {
-    document.body.style.overflow = isVisible ? "hidden" : "auto";
-  }
-
   return (
     <>
       <div
         id="container"
         onClick={handleClose}
-        className="fixed inset-0 z-50 bg-black/50      bg-opacity-50 flex justify-center items-center"
+        className="fixed inset-0 z-50 bg-black/50 bg-opacity-50 flex justify-center items-center"
       >
-        <div className="relative w-[95%] bg-gray-900 h-[95%]     mx-auto  text-gray-100 rounded-xl overflow-y-auto">
+        <div className="relative w-[95%] bg-gray-100 dark:bg-gray-900 h-[95%] hideScrollbar mx-auto text-gray-900 dark:text-gray-100 rounded-xl overflow-y-auto">
           <div className="px-4 py-6">
-            <header className="mb-6 mt-5 bg-gray-900  sticky    w-full top-2 flex justify-between">
+            <header className="mb-6 mt-5 bg-gray-100 dark:bg-gray-900 sticky w-full top-2 flex justify-between">
               <div>
-                <h1 className="sm:text-3xl md:text-4xl text-2xl font-bold mb-2 text-white">
+                <h1 className="sm:text-3xl md:text-4xl text-2xl font-bold mb-2 text-gray-900 dark:text-white">
                   The Struggles of Job Seekers: Finding the Perfect Fit
                 </h1>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-500 dark:text-gray-400">
                   By Team GITTC | July 26, 2024
                 </p>
               </div>
               <div className="flex justify-center gap-4 items-center">
                 <div>
+                  {/* Theme Toggle Button */}
                   <button
                     type="button"
-                    className="bg-[#090a0a] text-xl  text-[white] lg:text-[14px] px-3 rounded-lg text-[14px] font-semibold w-[83px] h-[45px]"
+                    onClick={toggleTheme}
+                    className={`${
+                      theme === "light"
+                        ? " bg-[#111827] text-white border-black "
+                        : " bg-gray-100 text-gray-900  border-white"
+                    } text-xl px-3 border-2 rounded-lg font-semibold w-[83px] h-[45px]`}
                   >
-                    Dark
+                    {theme === "light" ? "Dark" : "Light"}
                   </button>
                 </div>
                 <div onClick={close}>
-                  <Image src={stop} alt="close" />
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    className="w-6 h-6 text-gray-900 dark:text-white" // Added dynamic color styling for SVG
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18" strokeWidth="2" />
+                    <line x1="6" y1="6" x2="18" y2="18" strokeWidth="2" />
+                  </svg>
                 </div>
               </div>
             </header>
@@ -56,16 +85,16 @@ const BlogDetails = ({ isVisible, close }) => {
               />
             </div>
 
-            <p className="lg:mb-8 mb-5 mt-3 py-1">
+            <p className="lg:mb-8 mb-5 mt-3 py-1 dark:text-white">
               In today’s competitive job market, finding the perfect job can
               feel like searching for a needle in a haystack. Job seekers face
               numerous challenges that can make the process daunting and
               stressful. Let’s explore some of the common hurdles candidates
               encounter and how they can overcome them.
             </p>
-            <article className="prose prose-lg  text-gray-200 prose-invert">
+            <article className="prose prose-lg text-gray-900 dark:text-gray-200 prose-invert">
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   <span>1.</span> Confusing Application Processes
                 </h2>
                 <p>
@@ -77,7 +106,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   <span>2.</span> Unclear Job Descriptions
                 </h2>
                 <p>
@@ -88,7 +117,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   <span>3.</span> Long Drawn-Out Interview Processes
                 </h2>
                 <p>
@@ -99,7 +128,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   <span>4.</span> Unknown Salary Ranges
                 </h2>
                 <p>
@@ -110,7 +139,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold 0 mb-2">
                   <span>5.</span> Online Resume Filters
                 </h2>
                 <p>
@@ -121,7 +150,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   <span>6.</span> The Hidden Job Market
                 </h2>
                 <p>
@@ -132,7 +161,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   <span>7.</span> Not Feeling 100% Qualified for a Job
                 </h2>
                 <p>
@@ -143,7 +172,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   <span>8.</span> Resume Optimization
                 </h2>
                 <p>
@@ -153,7 +182,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   <span>9.</span> Interview Anxiety
                 </h2>
                 <p>
@@ -163,7 +192,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   <span>10.</span> Aligning Personal Values with Company Culture
                 </h2>
                 <p>
@@ -174,7 +203,7 @@ const BlogDetails = ({ isVisible, close }) => {
                 </p>
               </div>
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-200 mb-2">
+                <h2 className="text-2xl text-gray-900 dark:text-gray-200 font-semibold  mb-2">
                   Conclusion
                 </h2>
                 <p>
@@ -223,6 +252,8 @@ const BlogDetails = ({ isVisible, close }) => {
                 </a>
               </div>
             </footer>
+            
+            
           </div>
         </div>
       </div>
@@ -231,3 +262,4 @@ const BlogDetails = ({ isVisible, close }) => {
 };
 
 export default BlogDetails;
+

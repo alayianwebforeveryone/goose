@@ -5,6 +5,7 @@ import banner2 from "../../../Assets/images/Banner2.jpg";
 import banner1 from "../../../Assets/images/Banner1.jpg";
 import Image from "next/image";
 import PopularServicesSlider from "./ServicesCarousel";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
 
       {/* Business portfolio section */}
 
-      <div className="relative bg-bg-color">
+      <div className="relative bg-bg-color lg:mt-0 mt-32">
         <div className="home-globe-bg" />
         <div className="max-w-[1140px] min-h-[500px] flex mx-auto relative items-center">
           <div className="w-full relative flex min-h-1">
@@ -58,8 +59,7 @@ const Home = () => {
       </div>
       {/* slider of services */}
       <div className="bg-[#F4F4F4]">
-
-      <PopularServicesSlider />
+        <PopularServicesSlider />
       </div>
       {/* Success is priority */}
       <div>
@@ -79,24 +79,22 @@ const Home = () => {
                     You Achieve Your Business Goals And Drive Success.
                   </p>
                   <div className="xl:-ml-10 md:self-start self-center">
-                    <button className="xl:ml-[45px] lg:block undefined undefined">
-                      <a className="btn-one" href="https://gooseittc.com/">
-                        Read More
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          strokeWidth={0}
-                          viewBox="0 0 24 24"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path fill="none" d="M0 0h24v24H0z" />
-                          <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z" />
-                          <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z" />
-                        </svg>
-                      </a>
-                    </button>
+                    <div className=" justify-between items-center xl:ml-[45px] px-4 py-4 text-white font-bold text-xl  lg:flex  hidden bg-blue rounded-lg">
+                      <button class=" ">Read more</button>
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                        <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 {/* image slider */}
@@ -206,24 +204,24 @@ const Home = () => {
                       />
                     </div>
                     <div className="self-start xl:-ml-11 xl:mb-0 xl:mt-0">
-                      <button className="xl:ml-[45px] lg:block undefined undefined">
-                        <a className="btn-one" href="https://gooseittc.com/">
-                          SUBMIT NOW
+                      <Link href="/">
+                        <div className="  justify-between items-center xl:ml-[45px] lg:px-4  px-2 py-4 text-white font-bold lg:text-xl text-md   flex   bg-blue rounded-lg">
+                          <button class=" ">Submit now</button>
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
-                            strokeWidth={0}
+                            stroke-width="0"
                             viewBox="0 0 24 24"
                             height="1em"
                             width="1em"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z" />
-                            <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z" />
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
+                            <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
                           </svg>
-                        </a>
-                      </button>
+                        </div>
+                      </Link>
                     </div>
                   </form>
                 </div>
