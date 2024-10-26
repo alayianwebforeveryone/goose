@@ -47,24 +47,24 @@ const Navbar = () => {
             <MenubarMenu>
               <MenubarTrigger className = "font-bold text-lg ">SERVICE</MenubarTrigger>
               <MenubarContent>
-                <Link className="font-extrabold" href="/SoftDev">
-                  <MenubarItem>Software Development</MenubarItem>
+                <Link className="font-extrabold mb-2 py-2 " href="/Services/SoftDev">
+                  <MenubarItem className = "py-6 text-lg font-extrabold mb-2  px-4 ">Software Development</MenubarItem>
                 </Link>
                 <MenubarSeparator />
-                <Link href="/TechConsulting">
-                  <MenubarItem>Technology Consulting</MenubarItem>
+                <Link className="font-extrabold mb-2 py-2" href="/Services/TechConsulting " >
+                  <MenubarItem className = "py-6 text-lg font-extrabold mb-2  px-4 ">Technology Consulting</MenubarItem>
                 </Link>
                 <MenubarSeparator />
-                <Link href="/TechTraining">
-                  <MenubarItem>Technology Training</MenubarItem>
+                <Link  href="/Services/TechTraining">
+                  <MenubarItem className = "py-6 text-lg font-extrabold mb-2  px-4 ">Technology Training</MenubarItem>
                 </Link>
                 <MenubarSeparator />
-                <Link href="/TechAcquisition">
-                  <MenubarItem>Technology Acquisition</MenubarItem>
+                <Link className="py-2 " href="/Services/TalentAcquisitions">
+                  <MenubarItem className = "py-6 text-lg font-extrabold mb-2  px-4 ">Technology Acquisition</MenubarItem>
                 </Link>
                 <MenubarSeparator />
-                <Link href="/ImpPartners">
-                  <MenubarItem>Implementation Partners</MenubarItem>
+                <Link href="/Services/ImpPattern ">
+                  <MenubarItem className = "py-6 text-lg font-extrabold mb-2  px-4 ">Implementation Partners</MenubarItem>
                 </Link>
               </MenubarContent>
             </MenubarMenu>
@@ -86,8 +86,8 @@ const Navbar = () => {
           </Menubar>
           {/* quote btn */}
           <div className=" justify-between items-center xl:ml-[45px] px-4 py-4 text-white font-bold text-xl  lg:flex  hidden bg-blue rounded-lg">
-            <button class=" ">
-              Requset quote
+            <button className=" ">
+              Requset quote 
             </button>
             <svg
                   stroke="currentColor"
@@ -117,45 +117,45 @@ const Navbar = () => {
         <nav className="w-full bg-white ">
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="lg:hidden flex flex-col space-y-4 px-4">
+            <div className="lg:hidden flex flex-col space-y-4 px-2">
               {/* Home Link */}
-              <Link href="/" className="py-2">
-                HOME
+              <Link href="/" className=" text-md font-extrabold border-b-2   px-2">
+                Home
               </Link>
 
               {/* About Us Link */}
-              <Link href="/About" className="py-2">
-                ABOUT US
+              <Link href="/About" className=" text-md border-b-2 font-extrabold   px-2">
+                About us
               </Link>
 
               {/* Service Dropdown */}
               <div>
                 <button
-                  className="flex justify-between w-full py-2"
+                  className="flex items-center border-b-2 justify-between w-full "
                   onClick={() =>
                     setIsServiceDropdownOpen(!isServiceDropdownOpen)
                   }
                 >
-                  <span>SERVICE</span>
-                  <span className="bg-blue  px-3 text-lg text-white font-bold ">
+                  <span className="text-md font-extrabold    px-2">Services</span>
+                  <span className="bg-blue mb-2   px-3 text-lg text-white font-bold ">
                     {isServiceDropdownOpen ? "-" : "+"}
                   </span>
                 </button>
                 {isServiceDropdownOpen && (
                   <div className="flex flex-col space-y-1 pl-4">
-                    <Link href="/SoftDev" className="py-1">
+                    <Link  href="/Services/SoftDev" className= " py-2 border-b-2 text-md font-extrabold   ">
                       Software Development
                     </Link>
-                    <Link href="/TechConsulting" className="py-1">
+                    <Link href="/Services/TechConsulting" className= "py-2 border-b-2  text-md font-extrabold   ">
                       Technology Consulting
                     </Link>
-                    <Link href="/TechTraining" className="py-1">
+                    <Link href="/Services/TechTraining" className= " py-2 text-md border-b-2 font-extrabold   ">
                       Technology Training
                     </Link>
-                    <Link href="/TechAcquisition" className="py-1">
+                    <Link href="/Services/TalentAcquisitions" className= " py-2 border-b-2 text-md font-extrabold   ">
                       Technology Acquisition
                     </Link>
-                    <Link href="/ImpPartners" className="py-1">
+                    <Link href="/Services/ImpPartners" className= " py-2 text-md border-b-2 font-extrabold  ">
                       Implementation Partners
                     </Link>
                   </div>
@@ -163,18 +163,18 @@ const Navbar = () => {
               </div>
 
               {/* Contact Us Link */}
-              <Link href="/Contact" className="py-2">
-                CONTACT US
+              <Link href="/Contact" className= "text-md font-extrabold border-b-2  px-2">
+                Contact
               </Link>
 
               {/* Blogs Link */}
-              <Link href="/Blogs" className="py-2">
-                BLOGS
+              <Link href="/Blogs" className= "text-md font-extrabold border-b-2   px-2">
+                Blogs
               </Link>
 
               {/* Careers Link */}
-              <Link href="/Careers" className="py-2">
-                CAREERS
+              <Link href="/Careers" className= "text-md font-extrabold   px-2 border-b-2 ">
+                Careers
               </Link>
             </div>
           )}
@@ -185,3 +185,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+

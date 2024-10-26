@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       {/* subscribe section */}
-      <div className="bg-blue box-border">
+      <div className="bg-blue box-border mt-24  lg:mt-2 ">
         <div className="xl:w-[95.5%] mx-auto p-3">
           <div className="flex md:flex-row flex-col p-2 items-center">
             <div className="relative z-[1] md:p-[60px_0] py-[30px] flex md:w-[50%] subscribe-title after:left-[12%] md:after:left-[20%]">
@@ -126,7 +126,7 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="https://gooseittc.com/software-development"
+                    href="/Services/SoftDev"
                   >
                     <svg
                       stroke="currentColor"
@@ -150,7 +150,7 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="https://gooseittc.com/technology-consulting"
+                    href="/Services/TechConsulting"
                   >
                     <svg
                       stroke="currentColor"
@@ -174,7 +174,7 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="https://gooseittc.com/technology-training"
+                    href="/Services/TechTraining"
                   >
                     <svg
                       stroke="currentColor"
@@ -198,7 +198,7 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="https://gooseittc.com/talent-acquisitions"
+                    href="/Services/TalentAcquisitions"
                   >
                     <svg
                       stroke="currentColor"
@@ -222,8 +222,8 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="https://gooseittc.com/implementation-partners"
-                  >
+                    href="/Services/ImpPattern">
+                  
                     <svg
                       stroke="currentColor"
                       fill="currentColor"

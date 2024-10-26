@@ -5,7 +5,7 @@ const PopularServiceCard = ({ title, subTitle, description, img, btn }) => {
   return (
     <>
       {/* component */}
-      <div className="relative w-[80%] flex  max-h-[600px] min-h-[400px] pt-8 flex-col rounded-xl bg-[#F4F4F4] bg-clip-border text-gray-700 shadow-md">
+      <div className="relative lg:w-[80%]  flex  max-h-[600px] min-h-[400px] pt-8 flex-col rounded-xl bg-[#F4F4F4] bg-clip-border text-gray-700 shadow-md">
         <div className="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
           <Image src={img} alt="img-blur-shadow" layout="fill" />
         </div>
