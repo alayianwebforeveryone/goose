@@ -90,8 +90,8 @@ const TechTraining = () => {
         </div>
       </div>
       <div className="bg-bg-color relative">
-        {/* <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4"> */}
-        <div className="grid place-content-center xl:gap-y-12 md:gap-y-8 gap-y-5 gap-x-6 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 pb-5 px-96 ">
+        <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4">
+        <div className="grid place-content-center xl:gap-y-12 md:gap-y-8 gap-y-5 gap-x-6 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 pb-5  ">
           {
             trainingContent.map(({ img, title, details }, index) => {
               return (
@@ -103,7 +103,7 @@ const TechTraining = () => {
           }
 
         </div>
-        {/* </div> */}
+        </div>
       </div>
 
 

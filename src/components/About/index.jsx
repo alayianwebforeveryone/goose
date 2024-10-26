@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import AboutAccordian from "./AboutAccordian";
 
 
 
@@ -49,7 +50,7 @@ const About = () => {
         
       </div>
  
-{/* <AccordianComponent/> */}
+<AboutAccordian />
 
     </div>
   );

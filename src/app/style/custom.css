@@ -107,7 +107,7 @@
     background-repeat: no-repeat;
   }
   .about-hero-bg {
-    background-image: url(../../../Assets/images/AboutBanner.jpg);
+    background-image: url(../../../Assets/images/aboutHeroCover.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,7 +203,7 @@
     animation: none;
   }
   .software-hero-bg {
-    background-image: url(/assets/softwaredevImg-B58fgcQd.jpeg);
+    background-image: url(../../../Assets/images/softwaredevImg.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,7 +261,7 @@
     scroll-behavior: smooth;
   }
   .talent-hero-bg {
-    background-image: url(/assets/talent-bg-CsYayFQd.jpeg);
+    background-image: url(../../../Assets/images/talent-bg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

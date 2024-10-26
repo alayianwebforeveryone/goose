@@ -1,12 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
+
+import img from '../../../Assets/images/Software_Development.jpg';
 import React from "react";
-import img from '../../../../Assets/images/Software_Development.jpg';
+import Image from 'next/image';
+import Link from 'next/link';
 
 
-const SoftDev = () => {
-  return(
-   <div>
+const TempPage = () => {
+  return (
+    <div>
      <div>
       {/* Hero Section  */}
     
@@ -126,8 +127,8 @@ const SoftDev = () => {
         </div>
       </div>
       </div>
-   </div>
-  )
-}
+    </div>
+  );
+};
 
-export default SoftDev
+export default TempPage;

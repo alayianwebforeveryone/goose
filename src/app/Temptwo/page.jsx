@@ -1,12 +1,9 @@
-import ImpPattern from "@/components/Services/ImpPattern";
-import Link from "next/link";
-import React from "react";
-import TalentSlider from "./TalentSlider";
+import Link from 'next/link';
+import React from 'react'
 
-const TalenAcquisition = () => {
-  return(
+const TemporaryPage = () => {
+  return (
     <div>
-     <div>
       
       {/* talent Hero Section  */}
       <div className="talent-hero-bg bg-cover overflow-hidden">
@@ -42,15 +39,22 @@ const TalenAcquisition = () => {
         </div>
       </div>
       {/* Client Section  */}
-            <div className="bg-white">
-            <TalentSlider />
+      <div className="mb-[50px] bg-[#ffffff] relative">
+        <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4">
+          <div className="p-[10px]">
+            <div className="mb-5 pt-2">
+              <h2 className="p-[10px] text-center w-full md:text-[40px] text-[20px] font-bold">Our Clientele</h2>
+              <p className="text-lg xl:text-xl font-medium text-text-black text-center -mt-3 tracking-widest">USA, UAE,
+                INDIA</p>
             </div>
-          
-          
+            </div>
+            </div>
+            </div>
+            <div className ></div>
     </div>
 
-    </div>
+    
   )
 }
 
-export default TalenAcquisition
+export default TemporaryPage; 

@@ -59,7 +59,7 @@ const Navbar = () => {
                   <MenubarItem className = "py-6 text-lg font-extrabold mb-2  px-4 ">Technology Training</MenubarItem>
                 </Link>
                 <MenubarSeparator />
-                <Link className="py-2 " href="/Services/TalentAcquisition">
+                <Link className="py-2 " href="/Services/TalentAcquisitions">
                   <MenubarItem className = "py-6 text-lg font-extrabold mb-2  px-4 ">Technology Acquisition</MenubarItem>
                 </Link>
                 <MenubarSeparator />
@@ -86,7 +86,7 @@ const Navbar = () => {
           </Menubar>
           {/* quote btn */}
           <div className=" justify-between items-center xl:ml-[45px] px-4 py-4 text-white font-bold text-xl  lg:flex  hidden bg-blue rounded-lg">
-            <button class=" ">
+            <button className=" ">
               Requset quote 
             </button>
             <svg
