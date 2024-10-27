@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import Banner from "./Banner";
 
@@ -5,9 +6,25 @@ import banner2 from "../../../Assets/images/Banner2.jpg";
 import banner1 from "../../../Assets/images/Banner1.jpg";
 import Image from "next/image";
 import PopularServicesSlider from "./ServicesCarousel";
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 import Link from "next/link";
 
 const Home = () => {
+  const validationSchema = Yup.object().shape({
+    name: Yup.string()
+      .required('Name is required')
+      .max(40, 'Name must be 40 characters or less'),
+    email: Yup.string()
+      .matches(
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        'Invalid email format').required('Email is required'),
+
+    message: Yup.string()
+      .required('message is required')
+      .max(1000, 'Subject must be at most 1000 characters long'),
+
+  });
   return (
     <div>
       <Banner />
@@ -167,63 +184,92 @@ const Home = () => {
                 </div>
                 {/* form  */}
                 <div className="md:px-2 xl:w-[45%] w-full md:max-w-[50%] z-50 rounded-md lg:mt-10 -mb-14 md:mb-0">
-                  <form className="box-border md:px-[45px] md:py-[40px] sm:px-[40px] px-[30px] py-[40px] bg-[#FFFFFF] lg:ml-[120px] flex flex-col gap-y-6 items-start rounded-md shadow-xl mt-12">
+                  <div className="box-border md:px-[45px] md:py-[40px] sm:px-[40px] px-[30px] py-[40px] bg-[#FFFFFF] lg:ml-[80px] flex flex-col gap-y-6 items-start rounded-md shadow-xl mt-12">
                     <h2 className="text-3xl font-bold text-black">
                       Free Consultation
                     </h2>
-                    <div className="bg-[#F4F4F4] h-[60px] w-full rounded-md outline-none">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Name"
-                        className="w-[100%] h-full p-[0_15px] text-[#676767] bg-transparent border border-[#F4F4F4] outline-1 outline-blue
-                                                      placeholder:text-[#676767] placeholder:font-medium rounded-md"
-                      />
-                    </div>
-                    <div className="bg-[#F4F4F4] h-[60px] w-full rounded-md outline-none">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email Address"
-                        className="w-[100%] h-full p-[0_15px] text-[#676767] bg-transparent border border-[#E9E9E8] outline-1 outline-blue
-                                                      placeholder:text-[#676767] placeholder:font-medium rounded-md"
-                      />
-                    </div>
-                    <div className="w-full rounded-md outline-none">
-                      <textarea
-                        type="text"
-                        name="name"
-                        id="name"
-                        rows={6}
-                        placeholder="Message"
-                        className="w-[100%] h-full p-[15px_15px] bg-[#F4F4F4] text-[#676767] border border-[#E9E9E8] outline-1 outline-blue
-                                                      placeholder:text-[#676767] placeholder:font-medium rounded-md"
-                        defaultValue={""}
-                      />
-                    </div>
-                    <div className="self-start xl:-ml-11 xl:mb-0 xl:mt-0">
-                      <Link href="/">
-                        <div className="  justify-between items-center xl:ml-[45px] lg:px-4  px-2 py-4 text-white font-bold lg:text-xl text-md   flex   bg-blue rounded-lg">
-                          <button class=" ">Submit now</button>
-                          <svg
-                            stroke="currentColor"
-                            fill="currentColor"
-                            stroke-width="0"
-                            viewBox="0 0 24 24"
-                            height="1em"
-                            width="1em"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path fill="none" d="M0 0h24v24H0z"></path>
-                            <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z"></path>
-                            <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z"></path>
-                          </svg>
-                        </div>
-                      </Link>
-                    </div>
-                  </form>
+                    {/* formik form  */}
+                    <Formik
+                      initialValues={{
+                        name: '',
+                        email: '',
+                        phone: '',
+                        subject: '',
+                        message: '',
+                      }}
+                      validationSchema={validationSchema}
+                      onSubmit={(values, { resetForm }) => {
+                        console.log(values, 'form values');
+                        resetForm();
+                      }}
+                    >
+                      {({ handleSubmit, isValid, dirty }) => (
+                        <Form onSubmit={handleSubmit}>
+
+                          <div className="bg-[#F4F4F4] mb-[20px] h-[60px] md:w-[600px] rounded-md outline-none lg:gap-x-8 gap-x-5 gap-y-8">
+                            <Field name="name">
+                              {({ field }) => (
+                                <input
+                                  {...field}
+                                  placeholder="Name"
+                                  type="text"
+                                  required
+                                  className="w-full h-[60px] p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
+                                />
+                              )}
+                            </Field>
+                            <ErrorMessage name="name" component="div" className="text-red-600" />
+                          </div>
+
+                          <div className="bg-[#F4F4F4] mb-[20px] h-[60px] md:w-[600px] w-full rounded-md outline-none lg:gap-x-8 gap-x-5 gap-y-8">
+                            <Field name="email">
+                              {({ field }) => (
+                                <input
+                                  {...field}
+                                  type="email"
+                                  placeholder="Email"
+                                  required
+                                  className="w-full h-[60px] p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
+                                />
+                              )}
+                            </Field>
+                            <ErrorMessage name="email" component="div" className="text-red-600" />
+                          </div>
+
+                          <div className="w-full mb-[20px] bg-[#F4F4F4] md:w-[600px]">
+                            <Field name="message">
+                              {({ field }) => (
+                                <textarea
+                                  {...field}
+                                  placeholder="Message"
+                                  rows={5}
+                                  required
+                                  className="w-full h-full p-[15px_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
+                                />
+                              )}
+                            </Field>
+                            <ErrorMessage name="message" component="div" className="text-red-600" />
+                          </div>
+
+                          <div className="w-full flex justify-center">
+                            <button
+                              type="submit"
+                              disabled={!(isValid && dirty)}
+                              className={`btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center overflow-hidden relative text-[#FFFFFF] uppercase py-3 md:py-5 rounded-[5px] mx-auto ${!(isValid && dirty) ? 'opacity-50 cursor-not-allowed' : ''}`}
+                            >
+                              Submit
+                              <svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 24 24" className="ml-2 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z" />
+                                <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z" />
+                              </svg>
+                            </button>
+                          </div>
+                        </Form>
+                      )}
+                    </Formik>
+
+                  </div>
                 </div>
               </div>
             </div>

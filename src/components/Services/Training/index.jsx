@@ -63,12 +63,12 @@ const TechTraining = () => {
               And Your Team Stay Up-To-Date With The Latest Technology Advancements. Our Training Sessions Are
               Interactive And Engaging, And Our Instructors Are Experts In Their Respective Fields. Whether You Need
               Training For Software Development, Technology Consulting Or Any Other IT Related Fields, We Have Got
-              You Covered</p><a href="https://gooseittc.com/contact"><button className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
+              You Covered</p><Link href="/Contact"><button className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
                                                 overflow-hidden relative text-[#FFFFFF] uppercase py-4 md:py-5 rounded-full">Contact us<svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 24 24" className="ml-2 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z" />
                   <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z" />
-                </svg></button></a>
+                </svg></button></Link>
           </div>
         </div>
       </div>
