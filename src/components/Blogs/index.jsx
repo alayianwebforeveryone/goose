@@ -6,6 +6,7 @@ import talentAcquisition from "../../../Assets/images/Article3.jpg";
 import course from "../../../Assets/images/Article4.jpg";
 import Calinifornia from "../../../Assets/images/Article5.jpg";
 import ai from "../../../Assets/images/Article6.jpg";
+import Link from "next/link";
 
 const Blogtitles = () => {
   const blogContent = [
@@ -56,12 +57,12 @@ const Blogtitles = () => {
             <div className="px-2">
               <ul className="mb-[10px] flex flex-row text-[#FFFFFF] gap-x-5">
                 <li className="font-bold text-lg">
-                  <a
+                  <Link
                     className="mr-[20px] transition duration-[0.4s] cursor-pointer"
-                    href="https://gooseittc.com/"
+                    href="/"
                   >
                     Home
-                  </a>
+                  </Link>
                   <span>|</span>
                 </li>
                 <li className="list-none font-bold text-lg text-blue">Blogs</li>
@@ -74,7 +75,7 @@ const Blogtitles = () => {
         </div>
 
         {/* blogs start here */}
-<div className="flex flex-wrap justify-center gap-8 " >
+<div className="grid place-content-center  gap-y-5  sm:grid-cols-2 lg:w-[1200]   mx-auto gap-8 justify-center pt-2px  " >
         {blogContent.map(({ title, date_time, img, content }) => {
           return (
             <IndividualBlog
