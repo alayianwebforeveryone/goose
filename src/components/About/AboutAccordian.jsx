@@ -10,7 +10,7 @@ const AboutAccordian = () => {
   return (
     <>
     <div>
-     <div className="relative bg-bg-color w-full">
+     {/* <div className="relative bg-bg-color w-full">
         <div className="xl:max-w-[1140px] lg:max-w-[1024px] flex mx-auto px-4 pb-8">
           <div className="w-full">
             <div className="text-center mb-5 pb-[50px]">
@@ -56,8 +56,8 @@ const AboutAccordian = () => {
             </div>
           </div>
         </div>
-      </div>
-      <Accordion type="single" collapsible className="w-full">
+      </div> */}
+      {/* <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
         <AccordionContent>
@@ -78,7 +78,7 @@ const AboutAccordian = () => {
           prefer.
         </AccordionContent>
       </AccordionItem>
-    </Accordion>
+    </Accordion> */}
     </div>
     </>
   )

@@ -34,13 +34,13 @@ const BlogDetails = ({ isVisible, close }) => {
       <div
         id="container"
         onClick={handleClose}
-        className="fixed inset-0 z-50 bg-black/50 bg-opacity-50 flex justify-center items-center"
+        className="fixed inset-0 z-50  bg-opacity-50 bg-black/50  flex justify-center items-center"
       >
         <div className="relative w-[95%] bg-gray-100 dark:bg-gray-900 h-[95%] hideScrollbar mx-auto text-gray-900 dark:text-gray-100 rounded-xl overflow-y-auto">
           <div className="px-4 py-6">
             <header className="mb-6 mt-5 bg-gray-100 dark:bg-gray-900 sticky w-full top-2 flex justify-between">
               <div>
-                <h1 className="sm:text-3xl md:text-4xl text-2xl font-bold mb-2 text-gray-900 dark:text-white">
+                <h1 className="sm:text-lg md:text-4xl text-2xl font-bold mb-2 text-gray-900 dark:text-white">
                   The Struggles of Job Seekers: Finding the Perfect Fit
                 </h1>
                 <p className="text-sm text-gray-500 dark:text-gray-400">

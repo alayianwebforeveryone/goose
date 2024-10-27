@@ -1,4 +1,3 @@
-import ImpPattern from "@/components/Services/ImpPattern";
 import Link from "next/link";
 import React from "react";
 import TalentSlider from "./TalentSlider";
@@ -26,19 +25,22 @@ const TalenAcquisition = () => {
       </div>
       {/* Talent Page Content  */}
       <div className="lg:pb-[50px] lg:pt-[30px] py-[20px] bg-[#F4F4F4] relative">
-        <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4">
-          <div className="p-[10px]">
-            <p className="mt-2 text-base md:text-[18px] 2xl:text-xl tracking-wide lg:leading-[26px] font-normal text-pretty text-text-black">
-              Headquartered in California, our company stands at the forefront of global talent sourcing, leveraging
-              our strategic location to drive innovation and efficiency in recruitment. With a global reach, we
-              collaborate with local partners in India, South Asia, and beyond to acquire diverse talent, ensuring a
-              broad and inclusive approach to talent acquisition.</p>
-            <p className="2xl:mt-5 md:mt-4 mt-3 text-base md:text-[18px] tracking-wide lg:leading-[26px] 2xl:text-xl font-normal text-pretty text-text-black">
-              Our dedicated teams excel in identifying and securing top professionals across various industry
-              verticals, including Business Services, Information Technology, Engineering, and Healthcare
-              Consulting. Our expertise and commitment to excellence make us a trusted partner in the recruitment
-              industry, consistently delivering industry-leading professionals to meet the needs of our clients.</p>
-          </div>
+        <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4 ">
+        <div className="p-[10px]">
+  <p className="mt-2   md:text-[18px] 2xl:text-xl lg:leading-[26px] font-normal text-text-black text-justify">
+    Headquartered in California, our company stands at the forefront of global talent sourcing, leveraging
+    our strategic location to drive innovation and efficiency in recruitment. With a global reach, we
+    collaborate with local partners in India, South Asia, and beyond to acquire diverse talent, ensuring a
+    broad and inclusive approach to talent acquisition.
+  </p>
+  <p  className="mt-2  md:text-[18px] 2xl:text-xl lg:leading-[26px] font-normal text-text-black text-justify">
+    Our dedicated teams excel in identifying and securing top professionals across various industry
+    verticals, including Business Services, Information Technology, Engineering, and Healthcare
+    Consulting. Our expertise and commitment to excellence make us a trusted partner in the recruitment
+    industry, consistently delivering industry-leading professionals to meet the needs of our clients.
+  </p>
+</div>
+
         </div>
       </div>
       {/* Client Section  */}

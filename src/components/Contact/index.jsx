@@ -5,27 +5,27 @@ import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 const Contact = () => {
-const validationSchema = Yup.object().shape({
-  name: Yup.string()
-  .required('Name is required')
-  .max(40, 'Name must be 40 characters or less'),
-  email: Yup.string()
-  .matches(
-    /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-    'Invalid email format'
-  )
-  .required('Email is required'),
-  phone: Yup.string()
-  .required('Phone number is required')
-  .max(20, 'Phone number must be 20 characters or less')
-  .matches(/^[0-9]+$/, 'Phone number must contain only digits'),
-  subject: Yup.string()
-  .required('Subject is required')
-  .max(150, 'Subject must be at most 150 characters long'),
-  message: Yup.string()
-  .required('message is required')
-  .max(1000, 'Subject must be at most 1000 characters long'),
-    
+  const validationSchema = Yup.object().shape({
+    name: Yup.string()
+      .required('Name is required')
+      .max(40, 'Name must be 40 characters or less'),
+    email: Yup.string()
+      .matches(
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        'Invalid email format'
+      )
+      .required('Email is required'),
+    phone: Yup.string()
+      .required('Phone number is required')
+      .max(20, 'Phone number must be 20 characters or less')
+      .matches(/^[0-9]+$/, 'Phone number must contain only digits'),
+    subject: Yup.string()
+      .required('Subject is required')
+      .max(150, 'Subject must be at most 150 characters long'),
+    message: Yup.string()
+      .required('message is required')
+      .max(1000, 'Subject must be at most 1000 characters long'),
+
   });
   return (
     <div>
@@ -90,129 +90,130 @@ const validationSchema = Yup.object().shape({
           </div>
         </div>
       </div>
-      {/* Form Section of Contact Page  */}
-       
-     <div className="relative bg-bg-color md:py-[80px] py-[40px] w-full">
-      <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] 2xl:max-w-[1380px] w-full px-4">
-        <div className="bg-[#FFFFFF] md:px-[50px] md:py-[70px] py-[50px] px-[30px] shadow-[0px_25px_70px_rgba(0,0,0,0.08)] md:w-[93.5%] max-w-full mx-auto">
-          <div className="text-center lg:max-w-[660px] mx-auto mb-[60px]">
-            <span className="relative uppercase font-bold pl-[55px] inline-block mb-[14px] text-blue text-center
+   
+      <div className="relative bg-bg-color md:py-[80px] py-[40px] w-full">
+        <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] 2xl:max-w-[1380px] w-full px-4">
+          <div className="bg-[#FFFFFF] md:px-[50px] md:py-[70px] py-[50px] px-[30px] shadow-[0px_25px_70px_rgba(0,0,0,0.08)] md:w-[93.5%] max-w-full mx-auto">
+            <div className="text-center lg:max-w-[660px] mx-auto mb-[60px]">
+              <span className="relative uppercase font-bold pl-[55px] inline-block mb-[14px] text-blue text-center
                         before:absolute before:w-[40px] before:h-[2px] before:bg-blue before:top-[6px] before:left-0
-                        after:absolute after:w-[40px] after:h-[2px] after:bg-blue after:bottom-[6px] after:left-0 text-xl font-semibold">
-              GET IN TOUCH
-            </span>
-            <h2 className="md:text-[45px] sm:text-4xl text-[26px] font-bold md:leading-[55px] sm:leaing-[40px] sm:mt-0 mt-5 leading-[35px] text-text-black">
-              We Are Always Ready For Your Solution
-            </h2>
+                        after:absolute after:w-[40px] after:h-[2px] after:bg-blue after:bottom-[6px] after:left-0 text-xl">
+                GET IN TOUCH
+              </span>
+              <h2 className="md:text-[45px] sm:text-4xl text-[26px] font-bold md:leading-[55px] sm:leaing-[40px] sm:mt-0 mt-5 leading-[35px] text-text-black">
+                We Are Always Ready For Your Solution
+              </h2>
+            </div>
+            <Formik
+              initialValues={{
+                name: '',
+                email: '',
+                phone: '',
+                subject: '',
+                message: '',
+              }}
+              validationSchema={validationSchema}
+              onSubmit={(values,{resetForm}) => {
+                // Handle form submission
+                console.log(values, 'form values');
+                resetForm();
+              }}
+            >
+              {({ handleSubmit, isValid, dirty }) => (
+                <Form onSubmit={handleSubmit}>
+                  <div className="flex w-full sm:flex-row flex-col mb-[20px] sm:h-[60px] lg:gap-x-8 gap-x-5 gap-y-8">
+                    <Field name="name">
+                      {({ field }) => (
+                        <input
+                          {...field}
+                          placeholder="Name"
+                          type="text"
+                          required
+                          className="sm:w-1/2 w-full max-w-full md:h-full h-[60px] p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
+                        />
+                      )}
+                    </Field>
+                    <ErrorMessage name="name" component="div" className="text-red-600" />
+
+                    <Field name="email">
+                      {({ field }) => (
+                        <input
+                          {...field}
+                          type="email"
+                          placeholder="Email"
+                          required
+                          className="sm:w-1/2 w-full max-w-full sm:h-full h-[60px] p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
+                        />
+                      )}
+                    </Field>
+                    <ErrorMessage name="email" component="div" className="text-red-600" />
+                  </div>
+
+                  <div className="w-full mb-[20px] h-[60px]">
+                    <Field name="phone">
+                      {({ field }) => (
+                        <input
+                          {...field}
+                          type='phone'
+                          placeholder="Phone"
+                          required
+                          className="w-full max-w-full h-full p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
+                        />
+                      )}
+                    </Field>
+                    <ErrorMessage name="phone" component="div" className="text-red-600" />
+                  </div>
+
+                  <div className="w-full mb-[20px] h-[60px]">
+                    <Field name="subject">
+                      {({ field }) => (
+                        <input
+                          {...field}
+                          placeholder="Subject"
+                          required
+                          className="w-full max-w-full h-full p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
+                        />
+                      )}
+                    </Field>
+                    <ErrorMessage name="subject" component="div" className="text-red-600" />
+                  </div>
+
+                  <div className="w-full mb-[20px]">
+                    <Field name="message">
+                      {({ field }) => (
+                        <textarea
+                          {...field}
+                          placeholder="Message"
+                          rows={5}
+                          required
+                          className="w-full max-w-full h-full p-[15px_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
+                        />
+                      )}
+                    </Field>
+                    <ErrorMessage name="message" component="div" className="text-red-600" />
+                  </div>
+
+                  <div className="w-full flex justify-center">
+                    <button
+                      type="submit"
+                      disabled={!(isValid && dirty)}
+                      className={`btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center overflow-hidden relative text-[#FFFFFF] uppercase py-3 md:py-5 rounded-[5px] mx-auto ${!(isValid && dirty) ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    >
+                      Submit
+                      <svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 24 24" className="ml-2 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z" />
+                        <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z" />
+                      </svg>
+                    </button>
+                  </div>
+                </Form>
+              )}
+            </Formik>
+
           </div>
-          <Formik
-            initialValues={{
-              name: '',
-              email: '',
-              phone: '',
-              subject: '',
-              message: '',
-            }}
-            validationSchema={validationSchema}
-            onSubmit={(values) => {
-              // Handle form submission
-              console.log(values, 'form values');
-            }}
-          >
-            {({ handleSubmit }) => (
-              <Form onSubmit={handleSubmit}>
-                <div className="flex w-full sm:flex-row flex-col mb-[20px] sm:h-[60px] lg:gap-x-8 gap-x-5 gap-y-8">
-                  <Field name="name">
-                    {({ field }) => (
-                      <input
-                        {...field}
-                        placeholder="Name"
-                        type="text"
-                        required
-                        className="sm:w-1/2 w-full max-w-full md:h-full h-[60px] p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
-                      />
-                    )}
-                  </Field>
-                  <ErrorMessage name="name" component="div" className="text-red-600" />
-
-                  <Field name="email">
-                    {({ field }) => (
-                      <input
-                        {...field}
-                        type="email"
-                        placeholder="Email"
-                        required
-                        className="sm:w-1/2 w-full max-w-full sm:h-full h-[60px] p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
-                      />
-                    )}
-                  </Field>
-                  <ErrorMessage name="email" component="div" className="text-red-600" />
-                </div>
-
-                <div className="w-full mb-[20px] h-[60px]">
-                  <Field name="phone">
-                    {({ field }) => (
-                      <input
-                        {...field}
-                        type='phone'
-                        placeholder="Phone"
-                        required
-                        className="w-full max-w-full h-full p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
-                      />
-                    )}
-                  </Field>
-                  <ErrorMessage name="phone" component="div" className="text-red-600" />
-                </div>
-
-                <div className="w-full mb-[20px] h-[60px]">
-                  <Field name="subject">
-                    {({ field }) => (
-                      <input
-                        {...field}
-                        placeholder="Subject"
-                      
-                        required
-                        className="w-full max-w-full h-full p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
-                      />
-                    )}
-                  </Field>
-                  <ErrorMessage name="subject" component="div" className="text-red-600" />
-                </div>
-
-                <div className="w-full mb-[20px]">
-                  <Field name="message">
-                    {({ field }) => (
-                      <textarea
-                        {...field}
-                        placeholder="Message"
-                        rows={5}
-                        required
-                        className="w-full max-w-full h-full p-[15px_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue placeholder:text-[#676767] placeholder:font-medium rounded-md"
-                      />
-                    )}
-                  </Field>
-                  <ErrorMessage name="message" component="div" className="text-red-600" />
-                </div>
-
-                <div className="w-full flex justify-center ">
-                <Link  href="/Contact">
-                  <button type="submit" className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
-                                                overflow-hidden relative text-[#FFFFFF] uppercase py-3 md:py-5 rounded-[5px] mx-auto">
-                    Submit
-                    <svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 24 24" className="ml-2 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path fill="none" d="M0 0h24v24H0z" />
-                      <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z" />
-                      <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z" />
-                    </svg>
-                  </button>
-                  </Link>
-                </div>
-              </Form>
-            )}
-          </Formik>
         </div>
       </div>
-    </div>
     </div>
   );
 };

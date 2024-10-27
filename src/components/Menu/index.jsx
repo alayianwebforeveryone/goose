@@ -53,12 +53,12 @@ const Navbar = () => {
                   className=" text-md font-extrabold    px-2"
                   onClick={toggleMenu}
                 >
-                  Home
+                  HOME
                 </Link>
               </li>
               <li>
                 <Link href="/about" className=" text-md  font-extrabold   px-2">
-                  About us
+                  ABOUT US
                 </Link>
               </li>
               <li
@@ -68,7 +68,7 @@ const Navbar = () => {
               >
                 {/* dropdowntriger */}
                 <button className="flex  text-md  font-extrabold items-center justify-between w-full px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-white">
-                  Services
+                  SERVICES
                   <span className="text-blue  ml-4   px-3 text-xl  font-extrabold ">
                     {isServiceDropdownOpen ? "-" : "+"}
                   </span>
@@ -117,13 +117,13 @@ const Navbar = () => {
               </li>
               <li>
                 <Link href="/contact" className="text-md font-extrabold  px-2">
-                  Contact
+                  CONTACT US
                 </Link>
               </li>
 
               <li>
                 <Link href="/blogs" className="text-md font-extrabold   px-2">
-                  Blogs
+                  BLOGS
                 </Link>
               </li>
 
@@ -132,7 +132,7 @@ const Navbar = () => {
                   href="/careers"
                   className="text-md font-extrabold   px-2  "
                 >
-                  Careers
+                  CAREERS
                 </Link>
               </li>
             </ul>
@@ -157,6 +157,15 @@ const Navbar = () => {
               </svg>
             </div>
           </Link>
+          
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden focus:outline-none"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <Image src={menu} alt="menu" className="h-12 w-12" />
+          </button>
         </div>
 
         {/* Mobile Menu */}
