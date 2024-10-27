@@ -73,20 +73,21 @@ const Blogtitles = () => {
           </div>
         </div>
 
+        
         {/* blogs start here */}
-<div className="flex flex-wrap justify-center gap-8 " >
-        {blogContent.map(({ title, date_time, img, content }) => {
-          return (
-            <IndividualBlog
-              title={title}
-              date_time={date_time}
-              img={img}
-              content={content}
-            />
-          );
-        })}
-
-</div>
+       
+        <div className="flex flex-wrap justify-center gap-8  ">
+          {blogContent.map(({ title, date_time, img,  }, index) => (
+            <div key={index}>
+              <IndividualBlog
+                title={title}
+                date_time={date_time}
+                img={img}
+                
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

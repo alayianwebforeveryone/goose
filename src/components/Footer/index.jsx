@@ -126,7 +126,7 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="/Services/SoftDev"
+                    href="/services/softDev"
                   >
                     <svg
                       stroke="currentColor"
@@ -150,7 +150,7 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="/Services/TechConsulting"
+                    href="/services/techConsulting"
                   >
                     <svg
                       stroke="currentColor"
@@ -174,7 +174,7 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="/Services/TechTraining"
+                    href="/services/techTraining"
                   >
                     <svg
                       stroke="currentColor"
@@ -198,7 +198,7 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="/Services/TalentAcquisitions"
+                    href="/services/talentAcquisitions"
                   >
                     <svg
                       stroke="currentColor"
@@ -222,8 +222,8 @@ const Footer = () => {
                 <li className="list-none">
                   <Link
                     className="flex items-center text-neutral-600 group transition-all duration-500 cursor-pointer"
-                    href="/Services/ImpPattern">
-                  
+                    href="/services/impPattern"
+                  >
                     <svg
                       stroke="currentColor"
                       fill="currentColor"

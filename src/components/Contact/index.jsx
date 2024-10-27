@@ -91,36 +91,7 @@ const validationSchema = Yup.object().shape({
         </div>
       </div>
       {/* Form Section of Contact Page  */}
-       {/* <div className="relative bg-bg-color md:py-[80px] py-[40px] w-full">
-        <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] 2xl:max-w-[1380px] w-full px-4">
-          <div className="bg-[#FFFFFF] md:px-[50px] md:py-[70px] py-[50px] px-[30px] shadow-[0px_25px_70px_rgba(0,0,0,0.08)] md:w-[93.5%] max-w-full mx-auto">
-            <div className="text-center lg:max-w-[660px] mx-auto mb-[60px]"><span className="relative uppercase font-bold pl-[55px] inline-block mb-[14px] text-blue text-center
-                        before:absolute before:w-[40px] before:h-[2px] before:bg-blue before:top-[6px] before:left-0
-                        after:absolute after:w-[40px] after:h-[2px] after:bg-blue after:bottom-[6px] after:left-0 text-xl font-semibold">GET IN TOUCH</span>
-              <h2 className="md:text-[45px] sm:text-4xl text-[26px] font-bold md:leading-[55px] sm:leaing-[40px] sm:mt-0 mt-5 leading-[35px] text-text-black">
-                We Are Always Ready For Your Solution</h2>
-            </div>
-            <form>
-              <div className="flex w-full sm:flex-row flex-col mb-[20px] sm:h-[60px] lg:gap-x-8 gap-x-5 gap-y-8"><input type="text" name="name" id="name" placeholder="Name" required className="sm:w-1/2 w-full max-w-full md:h-full h-[60px] p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue
-                                            placeholder:text-[#676767] placeholder:font-medium rounded-md" /><input type="email" name="email" id="email" required placeholder="Email" className="sm:w-1/2 w-full max-w-full sm:h-full h-[60px] p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue
-                                            placeholder:text-[#676767] placeholder:font-medium rounded-md" /></div>
-              <div className="w-full mb-[20px] h-[60px]"><input type="text" name="phone" id="phone" placeholder="Phone" required className="w-full max-w-full h-full p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue
-                                            placeholder:text-[#676767] placeholder:font-medium rounded-md" /></div>
-              <div className="w-full mb-[20px] h-[60px]"><input type="text" name="subject" id="subject" placeholder="Subject" required className="w-full max-w-full h-full p-[0_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue
-                                            placeholder:text-[#676767] placeholder:font-medium rounded-md" /></div>
-              <div className="w-full mb-[20px]"><textarea name="message" id="message" placeholder="Message" rows={5} required className="w-full max-w-full h-full p-[15px_15px] text-[#343434] bg-transparent border border-[#E9E9E8] outline-1 outline-blue
-                                            placeholder:text-[#676767] placeholder:font-medium rounded-md" defaultValue={" "} />
-              </div>
-              <div className="w-full flex justify-center "><button type="submit" className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
-                                                overflow-hidden relative text-[#FFFFFF] uppercase py-3 md:py-5 rounded-[5px] mx-auto">Submit<svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 24 24" className="ml-2 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z" />
-                    <path d="m13 6-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z" />
-                  </svg></button></div>
-            </form>
-          </div>
-        </div>
-      </div> */}
+       
      <div className="relative bg-bg-color md:py-[80px] py-[40px] w-full">
       <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] 2xl:max-w-[1380px] w-full px-4">
         <div className="bg-[#FFFFFF] md:px-[50px] md:py-[70px] py-[50px] px-[30px] shadow-[0px_25px_70px_rgba(0,0,0,0.08)] md:w-[93.5%] max-w-full mx-auto">
