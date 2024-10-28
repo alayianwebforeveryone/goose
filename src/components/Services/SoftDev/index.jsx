@@ -18,7 +18,7 @@ const SoftDev = () => {
               <p className="text-[#000000] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] sm:text-base text-sm md:leading-[30px] leading-[25px] mb-[20px]">
                 We specialize in delivering comprehensive software solutions tailored to meet your business needs. Our
                 expertise spans across various domains, ensuring that you have the right tools to drive efficiency and
-                growth.</p><Link href="/Contact"><button className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
+                growth.</p><Link href="/contact"><button className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
                                                 overflow-hidden relative text-[#FFFFFF] uppercase py-4 md:py-5 rounded-full">Contact us<svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 24 24" className="ml-2 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path fill="none" d="M0 0h24v24H0z" />
                     <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z" />

@@ -14,7 +14,7 @@ const About = () => {
               <h1 className="md:text-[45px] md:leading-[3.5rem] sm:text-[28px] text-xl text-start leading-[1.4] lg:font-bold font-semibold text-white mb-[40px]">
                 Your One-Stop Solution For Consulting And Training Needs
               </h1>
-              <Link href="/Contact">
+              <Link href="/contact">
                 <button
                   className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
                                                 overflow-hidden relative text-[#FFFFFF] uppercase py-3 md:py-5 rounded-full"

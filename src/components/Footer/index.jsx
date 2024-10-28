@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="px-3 md:w-[calc(100%-10%)] mx-auto">
           <div className="flex justify-between flex-col md:flex-row sm:flex-wrap lg:flex-nowrap items-start gap-x-8">
             <div className="md:w-[30%]">
-              <Link href="https://gooseittc.com/">
+              <Link href="/">
                 <Image src={logo} alt="logo" className="w-[287px]" />
               </Link>
               <p className="text-base text-neutral-900 font-light mt-5 md:w-[100%]">
