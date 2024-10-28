@@ -105,7 +105,7 @@ const TechConsulting = () => {
       {/* card section */}
     
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-96">
+      <div className="grid place-content-center  gap-y-5  sm:grid-cols-2 lg:w-[1200]   mx-auto gap-8 justify-center pt-2 lg:px-72 ">
         {consultCardContent.map(({ title, img, description }, index) => {
           return (
             <div key={index} className="mt-8 " >
