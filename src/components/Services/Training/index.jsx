@@ -127,10 +127,10 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">Microsoft</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">Microsoft Power Platform And
+                  <p className="mb-5 text-base font-normal leading-[30px] text-justify">Microsoft Power Platform And
                     SharePoint Are Two Microsoft Technologies That Organizations Can Use To Automate Processes,
                     Create Workflows, And Share Information.</p>
-                  <p className=" text-base font-normal leading-[30px] text-start">Overall, Both Microsoft Power Platform
+                  <p className=" text-base font-normal leading-[30px] text-justify">Overall, Both Microsoft Power Platform
                     And SharePoint Enable Organizations To Streamline Processes, Automate Tasks, And Improve
                     Collaboration Across Teams And Departments. They Are Powerful Tools That Can Help Organizations
                     To Increase Efficiency, Reduce Costs, And Drive Innovation.</p>
@@ -148,7 +148,7 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">SAP IBP Cloud</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">SAP Integrated Business Planning
+                  <p className="mb-5 text-base font-normal leading-[30px]  text-justify">SAP Integrated Business Planning
                     (IBP) Is A Cloud-Based Planning And Forecasting Solution That Helps Organizations Improve Their
                     Supply Chain Processes. IBP Enables Businesses To Create Integrated Plans For Demand, Inventory,
                     Supply, And Financials. It Provides Real-Time Visibility Into Planning Data, Enables
@@ -169,7 +169,7 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">Oracle Cloud</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">Oracle Cloud Is A Suite Of Cloud
+                  <p className="mb-5 text-base font-normal leading-[30px] text-justify">Oracle Cloud Is A Suite Of Cloud
                     Computing Services Offered By Oracle Corporation. It Includes A Wide Range Of Services Such As
                     Infrastructure As A Service (IaaS), Platform As A Service (PaaS), Software As A Service (SaaS),
                     And Data As A Service (DaaS). Oracle Cloud Provides Businesses With A Comprehensive And
@@ -191,13 +191,13 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">SCRUM</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">Scrum Is An Agile Methodology Used
+                  <p className="mb-5 text-base font-normal leading-[30px] text-justify">Scrum Is An Agile Methodology Used
                     For Software Development And Project Management. It Is A Framework That Enables Teams To Work
                     Collaboratively To Deliver High-Quality Products In An Iterative And Incremental Manner. Scrum
                     Is Based On The Principles Of Transparency, Inspection, And Adaptation.</p>
                   <p className="mb-5 text-base font-normal leading-[30px] text-start">Scrum Involves A Set Of Predefined
                     Roles, Events, Artifacts, And Rules.</p>
-                  <p className="text-base font-normal leading-[30px] text-start">Overall, Scrum Provides A Flexible And
+                  <p className="text-base font-normal leading-[30px] text-justify">Overall, Scrum Provides A Flexible And
                     Adaptable Framework For Teams To Work Collaboratively And Iteratively To Deliver High-Quality
                     Products. It Encourages Transparency, Inspection, And Adaptation, Enabling Teams To Continuously
                     Improve Their Processes And Deliverables.</p>
@@ -215,11 +215,11 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">Multimedia Tools</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">Multimedia Tools Are Software
+                  <p className="mb-5 text-base font-normal leading-[30px] text-justify">Multimedia Tools Are Software
                     Applications Designed To Create, Edit, And Manipulate Multimedia Content, Such As Images, Audio,
                     Video, And Animations. These Tools Can Be Used In A Wide Range Of Fields And Industries,
                     Including Education, Entertainment, Marketing, Advertising, And More.</p>
-                  <p className=" text-base font-normal leading-[30px] text-start">Overall, Multimedia Tools Have
+                  <p className=" text-base font-normal leading-[30px] text-justify">Overall, Multimedia Tools Have
                     Numerous Uses And Applications In Various Industries, And Their Importance Continues To Grow As
                     Digital Media Becomes More Prevalent In Our Daily Lives.</p>
                 </div>
