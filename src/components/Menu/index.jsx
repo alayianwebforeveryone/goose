@@ -23,9 +23,9 @@ const Navbar = () => {
       <TopBanner />
 
       <nav className="w-full bg-white ">
-        <div className="flex  w-full   items-center justify-between lg:justify-evenly px-2     py-4 lg:px-8">
+        <div className="flex  w-full   items-center  justify-center gap-12 lg:justify-evenly      py-4 lg:px-8">
           {/* Logo Section */}
-          <div className="md:w-[250px] px-4 w-[200px]">
+          <div className="md:w-[250px]  w-[200px]">
             <Link href="/">
               <Image src={logo} alt="logo" className="w-full" />
             </Link>
@@ -159,13 +159,7 @@ const Navbar = () => {
           </Link>
           
 
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden focus:outline-none"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            <Image src={menu} alt="menu" className="h-12 w-12" />
-          </button>
+         
         </div>
 
         {/* Mobile Menu */}
@@ -202,7 +196,7 @@ const Navbar = () => {
                     Services
                   </span>
                   <span className="bg-blue mb-2   px-3 text-3xl  text-white font-extrabold ">
-                    {isServiceDropdownOpen ? "+" : "-"}
+                    {isServiceDropdownOpen ? "-" : "+"}
                   </span>
                 </button>
                 {/* dropdown */}
@@ -233,7 +227,7 @@ const Navbar = () => {
                       Technology Acquisition
                     </Link>
                     <Link
-                      href="/services/impPartners"
+                      href="/services/impPattern"
                       className=" py-2 text-md border-b-2 font-extrabold  "
                     >
                       Implementation Partners

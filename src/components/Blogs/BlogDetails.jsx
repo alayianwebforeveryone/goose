@@ -1,6 +1,5 @@
-
+"use client";
 import React, { useState, useEffect } from "react";
-import stop from "../../../Assets/Icons/close.svg";
 import Image from "next/image";
 import article1 from "../../../Assets/images/Article1.jpg";
 
@@ -36,7 +35,7 @@ const BlogDetails = ({ isVisible, close }) => {
         onClick={handleClose}
         className="fixed inset-0 z-50  bg-opacity-50 bg-black/50  flex justify-center items-center"
       >
-        <div className="relative w-[95%] bg-gray-100 dark:bg-gray-900 h-[95%] hideScrollbar mx-auto text-gray-900 dark:text-gray-100 rounded-xl overflow-y-auto">
+        <div className="relative w-[93%] lg:w-[95%]  bg-gray-100 dark:bg-gray-900 h-[95%] hideScrollbar mx-auto text-gray-900 dark:text-gray-100 rounded-xl overflow-y-auto">
           <div className="px-4 py-6">
             <header className="mb-6 mt-5 bg-gray-100 dark:bg-gray-900 sticky w-full top-2 flex justify-between">
               <div>
@@ -63,7 +62,7 @@ const BlogDetails = ({ isVisible, close }) => {
                   </button>
                 </div>
                 <div onClick={close}>
-                <svg
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -252,8 +251,6 @@ const BlogDetails = ({ isVisible, close }) => {
                 </a>
               </div>
             </footer>
-            
-            
           </div>
         </div>
       </div>
@@ -262,4 +259,3 @@ const BlogDetails = ({ isVisible, close }) => {
 };
 
 export default BlogDetails;
-
