@@ -49,7 +49,7 @@ const TechConsulting = () => {
             <h1 className="md:text-[42px] xl:text-[50px] md:leading-[3.5rem] sm:text-4xl text-3xl text-left leading-[1.4] font-bold text-[#000000] mb-[20px]">
               Technology Consulting
             </h1>
-            <p className="text-[#000000] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] sm:text-base text-sm md:leading-[30px] leading-[25px] mb-[20px]">
+            <p className="text-[#000000] text-justify  font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] sm:text-base text-sm md:leading-[30px] leading-[25px] mb-[20px]">
               At Goose ITTC, We Believe That Technology Should Be Used To Drive
               Business Growth And Success. Our Technology Consulting Services
               Are Designed To Help Businesses And Organizations Stay Ahead Of
