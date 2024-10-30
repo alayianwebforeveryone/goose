@@ -84,8 +84,8 @@ const Home = () => {
         <div className="bg-[#F4F4F4]">
           <div className="p-3 w-full flex items-start flex-wrap relative">
             <div className="relative pt-[70px] pb-[180px] overflow-hidden w-[100%] mx-auto">
-              <div className="box-border w-full gap-x-[2rem] flex md:flex-row gap-y-10 flex-col md:max-w-[960px] xl:max-w-[95.5%] mx-auto h-[100%]">
-                <div className="md:px-2 md:w-[50%] w-full flex flex-col justify-center md:items-start items-center">
+              <div className="box-border w-full gap-x-[2rem] flex md:flex-row gap-y-10 flex-col md:max-w-[960px] xl:max-w-[95.5%] mx-auto ">
+                <div className="md:px-2 md:w-[50%] w-full flex flex-col  md:items-start items-start">
                   <span className="text-xl text-blue font-bold block mb-2 ml-1">
                     Success Is Our Priority
                   </span>
@@ -96,8 +96,8 @@ const Home = () => {
                     Our Experienced Team Provides Solutions And Guidance To Help
                     You Achieve Your Business Goals And Drive Success.
                   </p>
-                  <div className="xl:-ml-10 md:self-start self-center">
-                    <div className=" justify-between items-center xl:ml-[45px] px-4 py-4 text-white font-bold text-xl  lg:flex  hidden bg-blue rounded-lg">
+                  <div className="xl:-ml-10 md:self-start self-center  ">
+                    <div className=" flex  justify-between items-center xl:ml-[45px] px-4 py-4 text-white font-bold text-xl  lg:flex   bg-blue rounded-lg">
                       <button class=" ">Read more</button>
                       <svg
                         stroke="currentColor"
@@ -115,20 +115,19 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                {/* image slider */}
 
-                <div className="md:w-[55%] md:mr-5">
-                  <div className="w-full flex gap-16 ">
-                    <div className="md:w-[800px] rounded-lg  xl:w-[625.5px] w-full sm:h-auto h-[600px]">
+                <div className="md:w-[55%] ">
+                  <div className="w-full   flex flex-col lg:flex-row gap-16 ">
+                    <div className="rounded-lg  w-full  ">
                       <Image
                         src={banner1}
-                        className="max-w-full sm:object-fill h-full object-cover"
+                        className="  "
                       />
                     </div>
-                    <div className="md:w-[592px] rounded-lg  xl:w-[625.5px] w-full sm:h-auto h-[380px]">
+                    <div className=" rounded-lg  hidden lg:block  w-full ">
                       <Image
                         src={banner2}
-                        className="max-w-full sm:object-fill h-full object-cover"
+                        className="=  "
                       />
                     </div>
                   </div>
