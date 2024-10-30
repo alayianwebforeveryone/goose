@@ -54,10 +54,10 @@ const TechTraining = () => {
     <div>
       <div className="technology-training-hero-bg bg-cover overflow-hidden">
         <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4 md:min-h-[420px] min-h-[602px] relative flex items-center">
-          <div className>
-            <h1 className="md:text-[42px] xl:text-[50px] md:leading-[3.5rem] sm:text-4xl text-3xl text-left leading-[1.4] font-bold text-[#FFFFFF] mb-[20px]">
+        <div className='lg:text-left text-center my-4'>
+        <h1 className="md:text-[42px] xl:text-[50px] md:leading-[3.5rem] sm:text-4xl text-3xl leading-[1.4] font-bold text-[#FFFFFF] mb-[20px]">
               Technology Training</h1>
-            <p className="text-[#FFFFFF] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] sm:text-base text-sm md:leading-[30px] leading-[25px] mb-[20px]">
+              <p className="text-[#FFFFFF] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] md:mx-auto lg:mx-0  text-sm  md:leading-[30px] leading-[25px] mb-[20px]">
               We Understand That Technology Is Always Evolving, And It Can Be Difficult For Businesses And
               Organizations To Keep Up. That’s Why We Offer Interactive Instructor-Led Training Services To Help You
               And Your Team Stay Up-To-Date With The Latest Technology Advancements. Our Training Sessions Are

@@ -9,7 +9,7 @@ import {
 const AboutAccordian = () => {
   return (
     <>
-      <div className="lg:w-[60%] w-full mx-auto my-8 ">
+      <div className="lg:w-[80%] xl:w-[60%] w-full mx-auto my-8 ">
         <div className="flex  flex-col lg:flex-row justify-center  gap-2" >
           <Accordion
             type="single"
@@ -19,7 +19,7 @@ const AboutAccordian = () => {
           <div className="border px-3 ">
               <AccordionItem value="item-1">
                 <AccordionTrigger>
-                  <div className="flex justify-between items-center  py-2 w-full">
+                  <div className="flex justify-between items-center   w-full">
                     <span className=" ">1. Expertise</span>
                   </div>
                 </AccordionTrigger>
@@ -46,7 +46,7 @@ const AboutAccordian = () => {
             <div className="border px-3 ">
               <AccordionItem value="item-1">
                 <AccordionTrigger>
-                  <div className="flex justify-between   py-2 w-full">
+                  <div className="flex justify-between    w-full">
                     <span className=" ">3. Quality</span>
                   </div>
                 </AccordionTrigger>

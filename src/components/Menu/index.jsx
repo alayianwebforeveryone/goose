@@ -51,7 +51,6 @@ const Navbar = () => {
                 <Link
                   href="/"
                   className=" text-lg   font-extrabold    px-2 "
-                  onClick={toggleMenu}
                 >
                   HOME
                 </Link>
@@ -139,7 +138,7 @@ const Navbar = () => {
           </div>
 
           {/* quote btn */}
-          <Link href="/contact" className="hidden lg:block ">
+          <Link href="/contact" className="hidden xl:block ">
             <div className=" justify-between items-center xl:ml-[45px] px-4 py-4 text-white font-bold text-xl  lg:flex  hidden bg-blue rounded-lg">
               <button className=" ">Requset quote</button>
               <svg
@@ -171,7 +170,6 @@ const Navbar = () => {
               <Link
                 href="/"
                 className=" text-md font-extrabold border-b-2   px-2"
-                onClick={toggleMenu}
               >
                 Home
               </Link>

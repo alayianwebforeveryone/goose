@@ -15,7 +15,7 @@ const Banner = () => {
           <div class="sm:text-xl  text-[15px] text-[#FFFFFF] text-center font-bold uppercase  mt-4  lg:mt-5  drop-shadow-[0px_0px_10px_rgba(0,0,0,0.3)]">
             what we do
           </div>
-          <div class="lg:text-[60px] md:text-[40px] text-[28px] mt-4  lg:leading-[1.4] text-center font-bold text-[#FFFFFF]   drop-shadow-[0px_0px_10px_rgba(0,0,0,0.3)]">
+          <div class="lg:text-[44px] xl:text-[60px] md:text-[40px] text-[28px] mt-4  lg:leading-[1.4] text-center font-bold text-[#FFFFFF]   drop-shadow-[0px_0px_10px_rgba(0,0,0,0.3)]">
             IT Consulting, Bespoke Development, Implementation, Training and
             Support Services
           </div>

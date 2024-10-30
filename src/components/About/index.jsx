@@ -10,13 +10,13 @@ const About = () => {
       <div>
         <div className="relative">
           <div className="about-hero-bg md:px-[120px] py-[100px] px-4">
-            <div className="md:w-[70%]">
-              <h1 className="md:text-[45px] md:leading-[3.5rem] sm:text-[28px] text-xl text-start leading-[1.4] lg:font-bold font-semibold text-white mb-[40px]">
+          <div className="md:w-[100%] mx-auto md:text-center md:items-center ">
+              <h1 className="md:text-[40px] md:leading-[3.5rem] sm:text-[28px] text-center text-xl   leading-[1.4] lg:font-bold font-semibold text-white mb-[40px]">
                 Your One-Stop Solution For Consulting And Training Needs
               </h1>
-              <Link href="/contact">
+              <Link href="/contact" className=" flex  justify-center">
                 <button
-                  className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
+                  className="btn-sub z-[3]  inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
                                                 overflow-hidden relative text-[#FFFFFF] uppercase py-3 md:py-5 rounded-full"
                 >
                   Contact us
@@ -54,7 +54,7 @@ const About = () => {
                   Our Company
                 </h2>
               </div>
-              <div className="px-2 ">
+              <div className="px-2 md:px-8 lg:px-2 ">
                 <p className="text-base leading-[30px] text-justify">
                   Are You Looking For A Reliable And Trustworthy Partner To Help
                   You With Your Software And Training Needs? Do You Want To Get

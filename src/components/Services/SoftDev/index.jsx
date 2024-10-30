@@ -12,10 +12,10 @@ const SoftDev = () => {
     
         <div className="software-hero-bg bg-cover overflow-hidden">
           <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4 md:min-h-[420px] min-h-[602px] relative flex items-center">
-            <div className>
-              <h1 className="md:text-[42px] xl:text-[50px] md:leading-[3.5rem] sm:text-4xl text-3xl text-left leading-[1.4] font-bold text-[#000000] mb-[20px]">
+          <div className='lg:text-left text-center '>
+          <h1 className="md:text-[42px] xl:text-[50px] md:leading-[3.5rem] sm:text-4xl text-3xl  leading-[1.4] font-bold text-[#000000] mb-[20px]">
                 Software Development</h1>
-              <p className="text-[#000000] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] sm:text-base text-sm md:leading-[30px] leading-[25px] mb-[20px]">
+                <p className="text-[#000000] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] md:mx-auto lg:mx-0 sm:text-base text-sm md:leading-[30px] leading-[25px] mb-[20px]">
                 We specialize in delivering comprehensive software solutions tailored to meet your business needs. Our
                 expertise spans across various domains, ensuring that you have the right tools to drive efficiency and
                 growth.</p><Link href="/contact"><button className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center

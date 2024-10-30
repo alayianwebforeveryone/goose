@@ -43,9 +43,9 @@ const Contact = () => {
         </div>
       </div>
       {/* Card Section of Contact Page  */}
-      <div className="relative bg-bg-color md:py-[100px] py-[70px] w-full">
-        <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] 2xl:max-w-[1300px] w-full px-4">
-          <div className="flex md:flex-row flex-col gap-x-8 mx-auto justify-center gap-y-10">
+      <div className="relative bg-bg-color md:py-[100px] py-[70px] w-full ">
+        <div className="md:w-[100%] mx-auto xl:max-w-[1160px] 2xl:max-w-[1300px] w-full px-4">
+          <div className="flex md:flex-row flex-col gap-x-8 mx-auto justify-center gap-y-10 w-[90%] ">
             <div className="relative flip-card md:w-[33%] sm:w-[80%] w-full py-[40px] mb:py-[60px] lg:py-[80px] px-[30px] pt-[75px] mt-10 bg-[#FFFFFF] shadow-[0px_25px_70px_rgba(0,0,0,0.08)] z-[1] group transition-all duration-[0.6s]">
               <div className="w-[60px] h-[60px] rounded-full bg-blue flex justify-center text-center items-center absolute top-[-30px] left-[40px] leading-[60px] spin-box">
                 <svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 384 512" className="text-[35px] text-[#FFFFFF] flip-animate group-hover:rotate transition-all duration-[0.4s] ease-linear" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +100,7 @@ const Contact = () => {
                         after:absolute after:w-[40px] after:h-[2px] after:bg-blue after:bottom-[6px] after:left-0 text-xl">
                 GET IN TOUCH
               </span>
-              <h2 className="md:text-[45px] sm:text-4xl text-[26px] font-bold md:leading-[55px] sm:leaing-[40px] sm:mt-0 mt-5 leading-[35px] text-text-black">
+              <h2 className="lg:text-[45px] sm:text-4xl text-[26px] font-bold md:leading-[55px] sm:leaing-[40px] sm:mt-0 mt-5 leading-[35px] text-text-black">
                 We Are Always Ready For Your Solution
               </h2>
             </div>

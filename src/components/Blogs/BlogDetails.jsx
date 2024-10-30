@@ -39,7 +39,7 @@ const BlogDetails = ({ isVisible, close }) => {
           <div className="px-4 py-6">
             <header className="mb-6 mt-5 bg-gray-100 dark:bg-gray-900 sticky w-full top-2 flex justify-between">
               <div>
-                <h1 className="sm:text-lg md:text-4xl text-2xl font-bold mb-2 text-gray-900 dark:text-white">
+              <h1 className="sm:text-xl lg:text-4xl text-sm font-bold mb-2 text-gray-900 dark:text-white">
                   The Struggles of Job Seekers: Finding the Perfect Fit
                 </h1>
                 <p className="text-sm text-gray-500 dark:text-gray-400">

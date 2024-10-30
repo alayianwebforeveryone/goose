@@ -45,12 +45,11 @@ const TechConsulting = () => {
     <div className="relative bg-bg-color">
       <div className="technology-cons-hero-bg bg-cover overflow-hidden">
         <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4 md:min-h-[420px] min-h-[602px] relative flex items-center">
-          <div className="">
-            <h1 className="md:text-[42px] xl:text-[50px] md:leading-[3.5rem] sm:text-4xl text-3xl text-left leading-[1.4] font-bold text-[#000000] mb-[20px]">
+        <div className="lg:text-left text-center my-4">
+        <h1 className="md:text-[42px] xl:text-[50px] md:leading-[3.5rem] sm:text-4xl text-3xl  leading-[1.4] font-bold text-[#000000] mb-[20px]">
               Technology Consulting
             </h1>
-            <p className="text-[#000000] text-justify  font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] sm:text-base text-sm md:leading-[30px] leading-[25px] mb-[20px]">
-              At Goose ITTC, We Believe That Technology Should Be Used To Drive
+            <p className="text-[#000000] text-justify md:text-center font-medium lg:max-w-[70%] lg:w-[62%] md:w-[65%] sm:w-[70%] w-[100%] md:mx-auto lg:mx-0  sm:text-base text-sm md:leading-[30px] leading-[25px] mb-[20px]">
               Business Growth And Success. Our Technology Consulting Services
               Are Designed To Help Businesses And Organizations Stay Ahead Of
               The Curve And Make The Most Of The Latest Technology Advancements.
@@ -105,7 +104,7 @@ const TechConsulting = () => {
       {/* card section */}
     
 
-      <div className="grid place-content-center  gap-y-5  sm:grid-cols-2 lg:w-[1200]   mx-auto gap-8 justify-center pt-2 lg:px-72 ">
+      <div className="grid place-content-center   gap-y-5  sm:grid-cols-2 lg:w-[100%]   gap-8 justify-center pt-2 md:px-12 lg:px-24 " >
         {consultCardContent.map(({ title, img, description }, index) => {
           return (
             <div key={index} className="mt-8 " >
