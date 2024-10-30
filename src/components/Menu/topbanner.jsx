@@ -1,11 +1,10 @@
 // TopBanner.jsx
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const TopBanner = () => {
   return (
-    <div className="top-banner before:xl:w-[33%] before:lg:w-[40%] after:xl:left-[33%] after:hidden after:lg:block before:w-0 after:lg:left-[40%] after:xl:rotate-[18deg] after:lg:rotate-[20deg]">
+    <div className="top-banner    before:xl:w-[33%] before:lg:w-[40%] after:xl:left-[33%] after:hidden after:lg:block before:w-0 after:lg:left-[40%] after:xl:rotate-[18deg] after:lg:rotate-[20deg]">
       <div className="mx-auto px-3 max-w-[1520px] h-full">
         <div className="flex items-center md:justify-end justify-center mt-5 md:mt-0 gap-x-5">
           <div className="flex items-center gap-2">

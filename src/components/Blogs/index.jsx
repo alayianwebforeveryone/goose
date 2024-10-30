@@ -75,15 +75,20 @@ const Blogtitles = () => {
         </div>
 
         {/* blogs start here */}
-<div className="grid place-content-center  gap-y-5  sm:grid-cols-2 lg:w-[1200]   mx-auto gap-8 justify-center pt-2px  " >
-        {blogContent.map(({ title, date_time, img, content }) => {
+<div className="grid place-content-center   gap-y-5  sm:grid-cols-2 lg:w-[100%]   gap-8 justify-center pt-2 md:px-12 lg:px-24 " >
+        {blogContent.map(({ title, date_time, img, content }, index) => {
           return (
-            <IndividualBlog
-              title={title}
-              date_time={date_time}
-              img={img}
-              content={content}
-            />
+            <div 
+            key={index}
+            >
+              <IndividualBlog
+                title={title}
+                date_time={date_time}
+                img={img}
+                content={content}
+              />
+
+            </div>
           );
         })}
 

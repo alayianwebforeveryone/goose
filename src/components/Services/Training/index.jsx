@@ -54,16 +54,16 @@ const TechTraining = () => {
     <div>
       <div className="technology-training-hero-bg bg-cover overflow-hidden">
         <div className="md:max-w-[760px] mx-auto xl:max-w-[1160px] w-full px-4 md:min-h-[420px] min-h-[602px] relative flex items-center">
-          <div className>
-            <h1 className="md:text-[42px] xl:text-[50px] md:leading-[3.5rem] sm:text-4xl text-3xl text-left leading-[1.4] font-bold text-[#FFFFFF] mb-[20px]">
+          <div className='lg:text-left text-center my-4'>
+            <h1 className="md:text-[42px] xl:text-[50px] md:leading-[3.5rem] sm:text-4xl text-3xl leading-[1.4] font-bold text-[#FFFFFF] mb-[20px]">
               Technology Training</h1>
-            <p className="text-[#FFFFFF] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] sm:text-base text-sm md:leading-[30px] leading-[25px] mb-[20px]">
+            <p className="text-[#FFFFFF] font-medium lg:max-w-[63.956%] lg:w-[62%] md:w-[55.9%] sm:w-[70%] w-[90%] md:mx-auto lg:mx-0  text-sm  md:leading-[30px] leading-[25px] mb-[20px]">
               We Understand That Technology Is Always Evolving, And It Can Be Difficult For Businesses And
               Organizations To Keep Up. That’s Why We Offer Interactive Instructor-Led Training Services To Help You
               And Your Team Stay Up-To-Date With The Latest Technology Advancements. Our Training Sessions Are
               Interactive And Engaging, And Our Instructors Are Experts In Their Respective Fields. Whether You Need
               Training For Software Development, Technology Consulting Or Any Other IT Related Fields, We Have Got
-              You Covered</p><Link href="/Contact"><button className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
+              You Covered</p><Link href="/contact"><button className="btn-sub z-[3] inline-flex items-center bg-blue text-base font-semibold text-center px-5 md:px-10 justify-center
                                                 overflow-hidden relative text-[#FFFFFF] uppercase py-4 md:py-5 rounded-full">Contact us<svg stroke="currentColor" fill="currentColor" strokeWidth={0} viewBox="0 0 24 24" className="ml-2 text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path d="M6.41 6 5 7.41 9.58 12 5 16.59 6.41 18l6-6z" />
@@ -127,10 +127,10 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">Microsoft</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">Microsoft Power Platform And
+                  <p className="mb-5 text-base font-normal leading-[30px] text-justify">Microsoft Power Platform And
                     SharePoint Are Two Microsoft Technologies That Organizations Can Use To Automate Processes,
                     Create Workflows, And Share Information.</p>
-                  <p className=" text-base font-normal leading-[30px] text-start">Overall, Both Microsoft Power Platform
+                  <p className=" text-base font-normal leading-[30px] text-justify">Overall, Both Microsoft Power Platform
                     And SharePoint Enable Organizations To Streamline Processes, Automate Tasks, And Improve
                     Collaboration Across Teams And Departments. They Are Powerful Tools That Can Help Organizations
                     To Increase Efficiency, Reduce Costs, And Drive Innovation.</p>
@@ -148,7 +148,7 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">SAP IBP Cloud</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">SAP Integrated Business Planning
+                  <p className="mb-5 text-base font-normal leading-[30px]  text-justify">SAP Integrated Business Planning
                     (IBP) Is A Cloud-Based Planning And Forecasting Solution That Helps Organizations Improve Their
                     Supply Chain Processes. IBP Enables Businesses To Create Integrated Plans For Demand, Inventory,
                     Supply, And Financials. It Provides Real-Time Visibility Into Planning Data, Enables
@@ -169,7 +169,7 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">Oracle Cloud</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">Oracle Cloud Is A Suite Of Cloud
+                  <p className="mb-5 text-base font-normal leading-[30px] text-justify">Oracle Cloud Is A Suite Of Cloud
                     Computing Services Offered By Oracle Corporation. It Includes A Wide Range Of Services Such As
                     Infrastructure As A Service (IaaS), Platform As A Service (PaaS), Software As A Service (SaaS),
                     And Data As A Service (DaaS). Oracle Cloud Provides Businesses With A Comprehensive And
@@ -191,13 +191,13 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">SCRUM</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">Scrum Is An Agile Methodology Used
+                  <p className="mb-5 text-base font-normal leading-[30px] text-justify">Scrum Is An Agile Methodology Used
                     For Software Development And Project Management. It Is A Framework That Enables Teams To Work
                     Collaboratively To Deliver High-Quality Products In An Iterative And Incremental Manner. Scrum
                     Is Based On The Principles Of Transparency, Inspection, And Adaptation.</p>
                   <p className="mb-5 text-base font-normal leading-[30px] text-start">Scrum Involves A Set Of Predefined
                     Roles, Events, Artifacts, And Rules.</p>
-                  <p className="text-base font-normal leading-[30px] text-start">Overall, Scrum Provides A Flexible And
+                  <p className="text-base font-normal leading-[30px] text-justify">Overall, Scrum Provides A Flexible And
                     Adaptable Framework For Teams To Work Collaboratively And Iteratively To Deliver High-Quality
                     Products. It Encourages Transparency, Inspection, And Adaptation, Enabling Teams To Continuously
                     Improve Their Processes And Deliverables.</p>
@@ -215,11 +215,11 @@ const TechTraining = () => {
                 </div>
                 <div className="md:w-[50%] w-full sm:p-[10px] text-start text-[#000000]">
                   <h2 className="text-[25px] mb-5 font-bold text-start">Multimedia Tools</h2>
-                  <p className="mb-5 text-base font-normal leading-[30px] text-start">Multimedia Tools Are Software
+                  <p className="mb-5 text-base font-normal leading-[30px] text-justify">Multimedia Tools Are Software
                     Applications Designed To Create, Edit, And Manipulate Multimedia Content, Such As Images, Audio,
                     Video, And Animations. These Tools Can Be Used In A Wide Range Of Fields And Industries,
                     Including Education, Entertainment, Marketing, Advertising, And More.</p>
-                  <p className=" text-base font-normal leading-[30px] text-start">Overall, Multimedia Tools Have
+                  <p className=" text-base font-normal leading-[30px] text-justify">Overall, Multimedia Tools Have
                     Numerous Uses And Applications In Various Industries, And Their Importance Continues To Grow As
                     Digital Media Becomes More Prevalent In Our Daily Lives.</p>
                 </div>

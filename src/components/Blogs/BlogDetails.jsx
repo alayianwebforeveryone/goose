@@ -1,6 +1,5 @@
-
+"use client";
 import React, { useState, useEffect } from "react";
-import stop from "../../../Assets/Icons/close.svg";
 import Image from "next/image";
 import article1 from "../../../Assets/images/Article1.jpg";
 
@@ -34,13 +33,13 @@ const BlogDetails = ({ isVisible, close }) => {
       <div
         id="container"
         onClick={handleClose}
-        className="fixed inset-0 z-50 bg-red-500 bg-opacity-50 flex justify-center items-center"
+        className="fixed inset-0 z-50  bg-opacity-50 bg-black/50  flex justify-center items-center"
       >
-        <div className="relative w-[95%] bg-gray-100 dark:bg-gray-900 h-[95%] hideScrollbar mx-auto text-gray-900 dark:text-gray-100 rounded-xl overflow-y-auto">
+        <div className="relative w-[93%] lg:w-[95%]   bg-gray-100 dark:bg-gray-900 h-[95%] hideScrollbar mx-auto text-gray-900 dark:text-gray-100 rounded-xl overflow-y-auto">
           <div className="px-4 py-6">
             <header className="mb-6 mt-5 bg-gray-100 dark:bg-gray-900 sticky w-full top-2 flex justify-between">
               <div>
-                <h1 className="sm:text-lg md:text-4xl text-2xl font-bold mb-2 text-gray-900 dark:text-white">
+                <h1 className="sm:text-xl lg:text-4xl text-sm font-bold mb-2 text-gray-900 dark:text-white">
                   The Struggles of Job Seekers: Finding the Perfect Fit
                 </h1>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -63,7 +62,7 @@ const BlogDetails = ({ isVisible, close }) => {
                   </button>
                 </div>
                 <div onClick={close}>
-                <svg
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
@@ -252,8 +251,6 @@ const BlogDetails = ({ isVisible, close }) => {
                 </a>
               </div>
             </footer>
-            
-            
           </div>
         </div>
       </div>
@@ -262,4 +259,3 @@ const BlogDetails = ({ isVisible, close }) => {
 };
 
 export default BlogDetails;
-

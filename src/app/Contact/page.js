@@ -1,10 +1,11 @@
-import Contact from "@/components/Contact"
+// src/app/contact/page.js
+import Contact from '@/components/Contact';
 
-const ContactPage = () => {
-    
-  return(
-    <Contact />
-  )
+
+export default function ContactPage() {
+   return (
+       <div>
+           <Contact/>
+       </div>
+   );
 }
-
-export default ContactPage
