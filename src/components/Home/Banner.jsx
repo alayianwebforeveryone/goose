@@ -12,17 +12,17 @@ const Banner = () => {
           data-aos-duration="1500"
           data-aos-delay="1000"
         >
-          <div class="sm:text-xl  text-[15px] text-[#FFFFFF] text-center font-bold uppercase mb-[30px] mt-32 lg:mt-5  drop-shadow-[0px_0px_10px_rgba(0,0,0,0.3)]">
+          <div class="sm:text-xl  text-[15px] text-[#FFFFFF] text-center font-bold uppercase  mt-4  lg:mt-5  drop-shadow-[0px_0px_10px_rgba(0,0,0,0.3)]">
             what we do
           </div>
-          <div class="md:text-[60px] text-[28px] leading-[1.4] text-center font-bold text-[#FFFFFF] mb-[40px] md:leading-[5rem] drop-shadow-[0px_0px_10px_rgba(0,0,0,0.3)]">
+          <div class="lg:text-[60px] md:text-[40px] text-[28px] mt-4  lg:leading-[1.4] text-center font-bold text-[#FFFFFF]   drop-shadow-[0px_0px_10px_rgba(0,0,0,0.3)]">
             IT Consulting, Bespoke Development, Implementation, Training and
             Support Services
           </div>
 
           <Link href = "/contact">
             <button
-              class="uppercase text-base font-bold text-[#fff] rounded-[50px] bg-blue px-[24px] py-[12px] xl:px-[40px] xl:py-[20px] cursor-pointer
+              class="uppercase text-base font-bold text-[#fff] rounded-[50px] mt-8  bg-blue px-[24px] py-[12px] xl:px-[40px] xl:py-[20px] cursor-pointer
                         hover:text-[#000000] self-center hover:bg-white transition-all duration-300"
             >
               Contact Us

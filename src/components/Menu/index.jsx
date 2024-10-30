@@ -23,7 +23,7 @@ const Navbar = () => {
       <TopBanner />
 
       <nav className="w-full bg-white ">
-        <div className="flex  w-full   items-center  justify-center gap-12 lg:justify-evenly      py-4 lg:px-8">
+        <div className="flex  md:flex-col lg:flex-row  w-full  justify-between  items-center    gap-4  px-2  lg:justify-evenly bg-white        py-4 lg:px-8">
           {/* Logo Section */}
           <div className="md:w-[250px]  w-[200px]">
             <Link href="/">
@@ -43,33 +43,33 @@ const Navbar = () => {
           {/* Desktop Menu */}
 
           <div
-            className="hidden w-full md:block md:w-auto"
+            className="hidden w-full   md:block md:w-auto"
             id="navbar-dropdown"
           >
-            <ul className="flex tiems-center flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
+            <ul className="flex  md:w-full   items-center flex-col font-medium  md:p-0 mt-4 border border-gray-100 rounded-lg    md:space-x-2 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li className=" ">
                 <Link
                   href="/"
-                  className=" text-md font-extrabold    px-2"
+                  className=" text-lg   font-extrabold    px-2 "
                   onClick={toggleMenu}
                 >
                   HOME
                 </Link>
               </li>
-              <li>
-                <Link href="/about" className=" text-md  font-extrabold   px-2">
+              <li className="  ">
+                <Link href="/about" className=" text-lg  px-2  font-extrabold  ">
                   ABOUT US
                 </Link>
               </li>
               <li
-                className="relative  dropdown-container"
+                className="relative    dropdown-container"
                 onMouseOver={() => setIsServiceDropdownOpen((prev) => !prev)}
                 onMouseLeave={() => setIsServiceDropdownOpen((prev) => !prev)}
               >
                 {/* dropdowntriger */}
-                <button className="flex  text-md  font-extrabold items-center justify-between w-full px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-white">
+                <button className="flex   text-md  font-extrabold items-center justify-between w-full px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-white">
                   SERVICES
-                  <span className="text-blue  ml-4   px-3 text-xl  font-extrabold ">
+                  <span className="text-blue  ml-2      text-xl  font-extrabold ">
                     {isServiceDropdownOpen ? "-" : "+"}
                   </span>
                 </button>
@@ -139,7 +139,7 @@ const Navbar = () => {
           </div>
 
           {/* quote btn */}
-          <Link href="/contact">
+          <Link href="/contact" className="hidden lg:block ">
             <div className=" justify-between items-center xl:ml-[45px] px-4 py-4 text-white font-bold text-xl  lg:flex  hidden bg-blue rounded-lg">
               <button className=" ">Requset quote</button>
               <svg
